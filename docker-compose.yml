@@ -1,0 +1,15 @@
+nginx:
+    build: ./nginx
+    ports:
+        - "80:80"
+    links:
+        - "php"
+    volumes_from:
+        - php
+
+php:
+    build: ./php
+    ports:
+        - "9000:9000"
+    volumes:
+        - ~/PHP/jobtong/branches/yangdesheng:/opt/www
