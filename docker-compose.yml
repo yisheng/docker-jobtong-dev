@@ -23,3 +23,6 @@ mysql:
     environment:
         MYSQL_ROOT_PASSWORD: 123456
         MYSQL_DATABASE: jobtong
+    # Default data source
+    # volumes:
+    #     - ~/Downloads/jobtong.sql:/var/jobtong.sql
