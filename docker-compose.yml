@@ -8,7 +8,7 @@ nginx:
         - php
 
 php:
-    build: ./php
+    image: yangdesheng/php56
     ports:
         - "9000:9000"
     volumes:
